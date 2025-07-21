@@ -1,40 +1,39 @@
-# Parking Reservation App
+# vue
 
-A modern minimalist parking reservation application with:
-- Laravel backend (reservation management, quoting, billing, notifications)
-- Vue 3 frontend (homepage, quoting tool, login/register, reservation list)
+This template should help get you started developing with Vue 3 in Vite.
 
-## Structure
+## Recommended IDE Setup
 
+[VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur).
+
+## Type Support for `.vue` Imports in TS
+
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates.
+
+However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can run `Volar: Switch TS Plugin on/off` from VS Code command palette.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
-├── backend/   # Laravel app
-├── frontend/  # Vue 3 app
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
 
-## Setup
+### Type-Check, Compile and Minify for Production
 
-### Backend (Laravel)
-1. `cd backend`
-2. `composer install`
-3. Copy `.env.example` to `.env` and configure DB
-4. `php artisan migrate`
-5. `php artisan serve`
+```sh
+npm run build
+```
 
-### Frontend (Vue 3)
-1. `cd frontend`
-2. `npm install`
-3. `npm run dev`
-
-## Features
-
-- Quote tool for price verification
-- Reservation management & cancellations
-- User authentication and registration
-- Rate management (multiple locations)
-- Email notifications (rates on reservation)
-- Push notifications (new reservations)
-- Billing & reporting
-
-## Contributing
-
-PRs and issues welcome!
+```sh
+php artisan serve --host=iampos.local --port=80
+```
