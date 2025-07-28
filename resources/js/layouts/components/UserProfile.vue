@@ -25,7 +25,7 @@ async function handleLogout() {
       timer: 1500,
       showConfirmButton: false,
     });
-    router.push("/login");
+    router.push("/home");
   } catch (e) {
     console.error("Error al cerrar sesión:", e);
   }

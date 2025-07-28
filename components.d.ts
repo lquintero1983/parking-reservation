@@ -17,9 +17,11 @@ declare module 'vue' {
     MoreBtn: typeof import('./resources/js/@core/components/MoreBtn.vue')['default']
     OficialesRow: typeof import('./resources/js/components/OficialesRow.vue')['default']
     PaymentsRow: typeof import('./resources/js/components/PaymentsRow.vue')['default']
+    QuoteComponent: typeof import('./resources/js/components/QuoteComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ThemeSwitcher: typeof import('./resources/js/@core/components/ThemeSwitcher.vue')['default']
     UpgradeToPro: typeof import('./resources/js/components/UpgradeToPro.vue')['default']
+    VideoComponent: typeof import('./resources/js/components/VideoComponent.vue')['default']
   }
 }

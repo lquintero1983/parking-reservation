@@ -1,5 +1,7 @@
 export const routes = [
-  { path: '/', redirect: '/dashboard' },
+  { path: '/', redirect: '/home' ,
+    meta: { requiresAuth: false}
+  },
    
    {
     path: '/',
@@ -147,6 +149,11 @@ export const routes = [
     path: '/',
     component: () => import('@/layouts/blank.vue'),
     children: [
+      {
+        path: 'home',
+        component: () => import('@/pages/home.vue'),
+        meta: { guestOnly: true }
+      },
       {
         path: 'login',
         component: () => import('@/pages/login.vue'),
